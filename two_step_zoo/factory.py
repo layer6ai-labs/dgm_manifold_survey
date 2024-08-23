@@ -51,8 +51,7 @@ def get_single_module(cfg, **kwargs):
         "flow": get_flow_module,
         "ebm": get_ebm_module,
         "arm": get_arm_module,
-        "diffusion": get_diffusion_module,
-        "flow_matching": get_cfm_module
+        "diffusion": get_diffusion_module
     }
     module = model_to_module_map[cfg["model"]](cfg)
 

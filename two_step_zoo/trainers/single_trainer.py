@@ -216,8 +216,8 @@ class SingleTrainer(BaseTrainer):
     def update_transform_parameters(self):
         train_dset = self.train_loader.dataset.x
 
-        self.module.data_min = train_dset.min()
-        self.module.data_max = train_dset.max()
+        self.module.data_min = train_dset.min().to(self.module.device)
+        self.module.data_max = train_dset.max().to(self.module.device)
         self.module.data_shape = train_dset.shape[1:]
 
 

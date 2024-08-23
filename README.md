@@ -11,9 +11,9 @@ In order to train the latent diffusion model, run
 
 and in order to train the diffusion model on ambient space, run
 
-    ./single_main.py --model diffusion --dataset cifar10 --is-gae
+    ./single_main.py --dataset cifar10 --model diffusion
 
-The resulting models will be automatically save in the `runs/` directory. Once the models are trained, the notebook `score_norms.ipynb` in the `notebooks` directory can be used to reproduce Figure 8.
+The resulting models will be automatically saved in the `runs/` directory. Once the models are trained, the notebook `score_norms.ipynb` in the `notebooks` directory can be used to reproduce Figure 8.
 
 
 ## BibTeX

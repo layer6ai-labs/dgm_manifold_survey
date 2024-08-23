@@ -92,8 +92,8 @@ class TwoStepComponent(nn.Module):
         self.clamp_samples = clamp_samples
 
         # NOTE: Need to set buffers to specific amounts or else they will not be loaded by state_dict
-        self.register_buffer("data_min", torch.tensor(0.))
-        self.register_buffer("data_max", torch.tensor(1.))
+        self.register_buffer("data_min", torch.tensor(0.).to(self.device))
+        self.register_buffer("data_max", torch.tensor(1.).to(self.device))
 
         if whitening_transform:
             whiten_dims = self._get_whiten_dims()
