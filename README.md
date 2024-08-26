@@ -1,3 +1,7 @@
+<p align="center">
+<a href="https://layer6.ai/"><img src="https://github.com/layer6ai-labs/DropoutNet/blob/master/logs/logobox.jpg" width="180"></a>
+</p>
+
 # Deep Generative Models through the Lens of the Manifold Hypothesis: A Survey and New Connections
 
 This is the codebase accompanying the paper ["Deep Generative Models through the Lens of the Manifold Hypothesis: A Survey and New Connections"](https://arxiv.org/abs/2404.02954), accepted to TMLR in August 2024. This codebase is based on the codebase from our previous paper, ["Diagnosing and Fixing Manifold Overfitting in Deep Generative Models"](https://arxiv.org/abs/2204.07172), please refer to [the original codebase](https://github.com/layer6ai-labs/two_step_zoo) for setup and general usage instructions (the updates include adversarially-regularized VAEs, score-based diffusion models, and [FD_DINOv2](https://arxiv.org/abs/2306.04675)).
