@@ -25,6 +25,8 @@ class ScoreBasedDiffusionModel(DensityEstimator):
         self.beta_min = beta_min
         self.beta_diff = (beta_max - beta_min) / T
 
+        # TODO: implement log_prob
+
     def sample(self, n_samples, eps=1e-2, steps=1000, track_score_norm=False):
         # Samples from the diffusion process using an Euler-Maruyama scheme, stops at time T-eps.
         with torch.no_grad():
